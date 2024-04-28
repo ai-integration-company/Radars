@@ -41,27 +41,33 @@ g++ -g K_BLP.cc -o K_BLP_linux -I/home/path/or-tools_x86_64_Ubuntu-22.04_cpp_v9.
 
 Solution 1:
 Objective value = 93.5302
+
 1 0 0 1 1 1 0 0 0 1 1 1 1 1 0 0 1 0 1 1 0 1 1 0 1 1 1 1 
 
 Solution 2:
 Objective value = 93.4908
+
 1 0 0 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 1 1 0 1 1 0 1 1 1 1 
 
 Solution 3:
 Objective value = 92.9703
+
 1 0 0 1 1 1 0 0 0 1 1 1 1 1 0 0 1 0 1 1 0 1 1 0 1 1 1 0 
 
 Solution 4:
 Objective value = 92.9309
+
 1 0 0 1 1 1 0 0 0 0 1 1 1 1 0 0 1 0 1 1 0 1 1 0 1 1 1 0 
 
 Solution 5:
 Objective value = 92.8271
+
 1 0 0 1 1 1 0 0 0 1 1 1 0 1 0 0 1 0 1 1 0 1 1 0 1 1 1 1
 
 ## Время (без учета подключения библотек)
 
 K_BPL на python с ortools --- 32мс
+
 K_BPL на python с pulp --- 0.3с
 
 K_BPL на c++ с ortools --- 12мс
