@@ -1,5 +1,6 @@
 import time
 import csv
+import sys
 from ortools.linear_solver import pywraplp
 
 def load_data(filepath):
@@ -55,7 +56,8 @@ def K_BLP(k, w, adjacency_matrix):
         
 if __name__=="__main__":
     t1 = time.time()
-    adjacency_matrix, weights = load_data('input_with_weights.csv')
+    filename = sys.argv[1]
+    adjacency_matrix, weights = load_data(filename)
     K_BLP(5,weights, adjacency_matrix)
     t2 = time.time()
     print(f"time ={t2-t1}")

@@ -1,4 +1,5 @@
 import pulp
+import sys
 import time
 import csv
 
@@ -46,8 +47,9 @@ def K_BLP(k, w, adjacency_matrix):
             return None
 
 if __name__ == "__main__":
+    filename = sys.argv[1]
     t1 = time.time()
-    matrix, weights = load_data('input_with_weights.csv')
+    matrix, weights = load_data(filename)
     K_BLP(5, weights, matrix)
     t2 = time.time()
     print(f"t = {t2-t1}")
