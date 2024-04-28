@@ -9,5 +9,5 @@
 Поменять название файла "какой-то_файл.py" на "какая-то_хуйня".py  
 запуск из командной строки:
 ```shell
-python K_BLP.py --input_with_weights.csv
+python K_BLP.py input_with_weights.csv
 ```
