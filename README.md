@@ -25,7 +25,7 @@ python K_BLP.py input_with_weights.csv
 ```
 
 ## Инструкция по запуску для пользователей linux
-Разархивируйте папку linux. Основной файл K_BLP.cc. Для компиляции необходимо ввести следующую команду (заменив пути на ваши) 
+Разархивируйте папку linux. Основной файл K_BLP.cc. Для компиляции необходимо ввести следующую команду (заменив пути к инклудам и библиотекам на ваши) 
 ```bash
 g++ -g K_BLP.cc -o K_BLP_linux -I/home/path/or-tools_x86_64_Ubuntu-22.04_cpp_v9.9.3963/include -L/home/path/or-tools_x86_64_Ubuntu-22.04_cpp_v9.9.3963/lib -lortools -labsl_strings -labsl_synchronization -lpthread -ldl
 ```
