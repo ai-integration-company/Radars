@@ -10,7 +10,7 @@
 Входные данные для скрипта передаются аргументом в формате csv.  
 В файле должна быть указана матрица смежности графа (матрица верхнетреугольная, строки матрицы указаны через перенос строки) и веса вершин (последней строчкой файла).  
   
-запуск скрипта из командной строки:
+запуск скрипта из командной строки имя файла аргументом:
 ```shell
 python K_BLP.py input_with_weights.csv
 ```
@@ -30,7 +30,7 @@ python K_BLP.py input_with_weights.csv
 g++ -g K_BLP.cc -o K_BLP_linux -I/home/path/or-tools_x86_64_Ubuntu-22.04_cpp_v9.9.3963/include -L/home/path/or-tools_x86_64_Ubuntu-22.04_cpp_v9.9.3963/lib -lortools -labsl_strings -labsl_synchronization -lpthread -ldl
 ```
 
-После это ввести, например 
+После это ввести аргументами имя файла и число наилучших оптимальных решений
 ```bash
 ./K_BLP_linux input_with_weights.csv 5
 ```
